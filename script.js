@@ -1,10 +1,51 @@
+const colorThemes = document.querySelectorAll('[name="theme"]');
+
+//store theme
+const storeTheme = function (theme) {
+    localStorage.setItem("theme", theme)
+}
+
+colorThemes.forEach((themeOption) => {
+    themeOption.addEventListener('click', () => {
+        storeTheme(themeOption.id);
+    });
+})
+
+//apply theme
+const retrieveTheme = function () {
+    const activeTheme = localStorage.getItem("theme");
+    colorThemes.forEach((themeOption) => {
+        if (themeOption.id === activeTheme) {
+            themeOption.checked = true;
+        }
+    });
+};
+
+document.onload = setTheme();
+
+const setTheme = function(theme) {
+    document.documentElement.className = theme;
+}
+
+
+//user greeting
 const greetings = [
     "Hello,",
     "Welcome,",
-    "Hi there,",
+    "Marhabaan,",
     "Greetings,",
-    "Hey,",
-    "Nice to meet you,",
+    "Kamusta,",
+    "Bonjour,",
+    "G'day,",
+    "Dobryj Den,",
+    "Hallå,",
+    "Sata Srī Akāla,",
+    "Xin Chào,",
+    "Aloha,",
+    "S’mae,",
+    "Dia Duit,",
+    "Guten Tag,",
+    "Kia Ora, ",
 ];
 
 function greetUser() {
