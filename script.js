@@ -12,20 +12,10 @@ colorThemes.forEach((themeOption) => {
 })
 
 //apply theme
-const retrieveTheme = function () {
-    const activeTheme = localStorage.getItem("theme");
-    colorThemes.forEach((themeOption) => {
-        if (themeOption.id === activeTheme) {
-            themeOption.checked = true;
-        }
-    });
-};
-
-document.onload = setTheme();
-
-const setTheme = function(theme) {
+const setTheme = function (theme) {
     document.documentElement.className = theme;
 }
+
 
 
 //user greeting
