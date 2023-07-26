@@ -20,5 +20,3 @@ function greetUser() {
         button.style.display = "none";
     }
 }
-
-
