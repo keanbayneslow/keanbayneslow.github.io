@@ -9,12 +9,12 @@ colorThemes.forEach((themeOption) => {
     themeOption.addEventListener('click', () => {
         storeTheme(themeOption.id);
     });
-})
+});
 
 //apply theme
 const setTheme = function (theme) {
     document.documentElement.className = theme;
-}
+};
 
 
 
@@ -50,4 +50,4 @@ function greetUser() {
         const button = document.querySelector("button");
         button.style.display = "none";
     }
-}
+};
