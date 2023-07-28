@@ -1,13 +1,23 @@
 const colorThemes = document.querySelectorAll('[name="theme"]');
+const rootElement = document.documentElement;
 
 //store theme
 const storeTheme = function (theme) {
     localStorage.setItem("theme", theme)
 }
 
+const applyStoredTheme = function () {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+        setTheme(storedTheme);
+    }
+};
+
 colorThemes.forEach((themeOption) => {
     themeOption.addEventListener('click', () => {
-        storeTheme(themeOption.id);
+        const selectedTheme = themeOption.id;
+        storeTheme(selectedTheme);
+        setTheme(selectedTheme);
     });
 });
 
@@ -16,7 +26,7 @@ const setTheme = function (theme) {
     document.documentElement.className = theme;
 };
 
-
+applyStoredTheme();
 
 //user greeting
 const greetings = [
@@ -35,7 +45,8 @@ const greetings = [
     "S’mae,",
     "Dia Duit,",
     "Guten Tag,",
-    "Kia Ora, ",
+    "Kia Ora,",
+    "01001000 01000101 01001100 01001100 01001111,"
 ];
 
 function greetUser() {
