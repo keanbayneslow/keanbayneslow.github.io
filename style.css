@@ -197,6 +197,22 @@ button:hover {
     font-size: 40px
 }
 
+.section__title {
+    color: #00CE44;
+    font-size: 30px;
+    text-align: top;
+    height: 500px;
+}
+
+.section__content {
+    max-width: 900px;
+    min-height: 500px;
+    text-align: left;
+    font-size: 25px;
+
+    line-height: 35px;
+}
+
 #about {
     height: 100vh;
     width: 100%;
@@ -206,6 +222,19 @@ button:hover {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
+}
+
+.resume a {
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.resume a:hover {
+    color: #00CE44;
 }
 
 #skills {
@@ -218,9 +247,30 @@ button:hover {
     gap: 50px;
 }
 
+.skills__container {
+    display: flex;
+    text-align: justify;
+    height: 570px;
+}
+
+.skill__label {
+    font-weight: bold;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.skill__category {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.skill__item {
+    line-height: 40px;
+}
+
 #projects {
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     scroll-snap-stop: normal;
     display: flex;
     align-items: center;
@@ -228,33 +278,59 @@ button:hover {
     gap: 50px;
 }
 
-.section__title {
-    color: #00CE44;
-    font-size: 30px;
-    text-align: top;
-    height: 500px;
+#projects .section__content {
+    height: 700px;
 }
 
-.section__content {
-    max-width: 900px;
-    height: 500px;
-    text-align: left;
-    font-size: 25px;
+.project__item {
+    display: flex;
 }
 
 #projects .project__picture img {
-    width: 60%;
+    width: 70%;
     max-width: 100%;
+    margin-right: 40px;
+}
+
+.project__name a {
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding-bottom: 20px;
+    font-style: oblique;
+}
+
+figcaption {
+    text-align: start;
+    padding: 20px;
+    max-width: 500px;
+    font-size: 20px ;
 }
 
 .footer {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    margin-top: 40px;
-    min-height: 100vh;
+    margin: 40px;
     display: flex;
-    flex-direction: column;
-    margin-top: auto;
+    flex: 1;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.footer__copyright {
+    text-align: start;
+}
+
+.footer__links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.footer__links a:hover {
+    color: #00CE44;
 }
 
 /* Media Query */
