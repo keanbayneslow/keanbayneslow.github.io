@@ -86,7 +86,7 @@ My initial attempt worked partially but resulted in turning the whole screen gre
 
 Eventually I worked out how to make the effect for myself:
 
-![Highlight](./src/Highlight.mp4)
+[![Highlight Effect](./src/Highlight.mp4)
 
 ```html
 <h3 class="intro__contact">Get in touch <span><a href="mailto:kean.bayneslow@gmail.com" target="_blank" class="highlight__link">kean.bayneslow@gmail.com</a> </span> </h3>
