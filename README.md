@@ -86,7 +86,7 @@ My initial attempt worked partially but resulted in turning the whole screen gre
 
 Eventually I worked out how to make the effect for myself:
 
-[![Highlight Effect](./src/Highlight.mp4)
+![Highlight 1](./src/Highlight%201.png)![Highlight 2](./src/Highlight%202.png)
 
 ```html
 <h3 class="intro__contact">Get in touch <span><a href="mailto:kean.bayneslow@gmail.com" target="_blank" class="highlight__link">kean.bayneslow@gmail.com</a> </span> </h3>
@@ -124,4 +124,22 @@ Eventually I worked out how to make the effect for myself:
 
 ## Lessons Learned
 
+Correct Rendering: HTML and CSS are parsed by the browser sequentially, from top to bottom. The order of elements and styles in the code affects how the browser renders the page. If the order is incorrect, it may lead to unexpected or incorrect rendering of elements, which can result in a broken layout or visual inconsistencies.
+
+CSS Specificity: In CSS, the order of rules matters when determining which style should be applied to an element. When multiple CSS rules target the same element with overlapping selectors, the one defined last takes precedence. This concept is known as CSS specificity. By maintaining order, you ensure that the desired styles are applied consistently based on the specificity rules.
+
+Overriding Styles: In large projects or when using external libraries, different parts of the codebase may define conflicting styles. By carefully ordering CSS rules, you can control which styles take precedence over others. This prevents unintentional style conflicts and helps maintain a consistent and cohesive visual design.
+
+Responsive Design: In responsive web design, the order of HTML elements and CSS rules can impact how the page behaves on different screen sizes and devices. By organizing elements and styles logically, you can create a more predictable and flexible layout that adapts well to various devices.
+
+Readability and Maintainability: A well-organized code structure enhances code readability and makes it easier to maintain. When you or other developers revisit the code in the future, a logical order will help them quickly understand the layout and styles, reducing the chances of introducing errors during maintenance.
+
+Accessibility: The order of HTML elements can affect how screen readers and other assistive technologies interpret the content. Maintaining a proper order ensures that users with disabilities can access and navigate the content effectively.
+
 ## Future Developments
+
+- At the time of updating I have not cracked the code on storing the selected theme in the browser's LocalStorage and remembering this selection across multiple visits. I would like to keep working on this. 
+
+- Including further JavaScript to make the Project Section render Dynamically which I hope will make it much easier to update with future project additions.
+
+- Media Query Layout, I would like to keep working on this with a mobile first design for future iterations as I did struggle making the page fully responsive. 
