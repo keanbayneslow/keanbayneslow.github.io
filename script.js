@@ -1,6 +1,7 @@
 const colorThemes = document.querySelectorAll('[name="theme"]');
 const rootElement = document.documentElement;
 
+
 /*store theme
 const storeTheme = function (theme) {
     localStorage.setItem("theme", theme)
