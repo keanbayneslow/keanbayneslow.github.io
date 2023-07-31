@@ -115,7 +115,6 @@ input {
 #home {
     margin: 4rem;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,7 +234,6 @@ button:hover {
     height: 100dvh;
     width: 100dvw;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +265,6 @@ button:hover {
 #skills {
     height: 100dvh;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,7 +298,6 @@ button:hover {
 #projects {
     height: 100dvh;
     scroll-snap-align: end;
-    scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,7 +336,6 @@ figcaption {
 
 .footer {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
     margin: 3rem;
     display: flex;
     flex: 1;
