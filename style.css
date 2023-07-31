@@ -1,11 +1,18 @@
+/* Whole Page Styling */
+
+html {
+    width: 100dvw;
+    height: 100dvh;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'IBM Plex Mono', monospace;
     scroll-snap-type: y proximity;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 8rem;
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 :root {
@@ -15,10 +22,12 @@
     --clr-light-text: #111213;
 }
 
+/* Body */
+
 #site {
     text-align: center;
-    width: 100%;
-    min-height: 100vh;
+    width: 100dvw;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
@@ -27,12 +36,14 @@
     background: #00CE44;
 }
 
+/* Navbar */
+
 #navbar {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 0rem;
+    right: 0rem;
     max-width: 100%;
-    margin-right: 20px;
+    margin-right: 2rem;
 
 }
 
@@ -40,18 +51,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 .navbar__menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     display: flex;
 }
 
 .navbar__item {
-    margin-right: 20px;
+    margin-right: 2rem;
     font-size: 1.2rem;
 }
 
@@ -72,7 +83,7 @@ input {
 
 .theme-picker fieldset {
     display: inline-flex;
-    border: 1px solid;
+    border: 0.1rem solid;
     text-align: center;
     gap: 0.5rem;
     padding: 0.2rem;
@@ -80,11 +91,11 @@ input {
 }
 
 .theme-picker legend {
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .theme-picker label {
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 
 .light,
@@ -99,62 +110,30 @@ input {
     color: var(--clr-dark-text);
 }
 
-button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border: solid 2px #f5f5f5e5;
-    background-color: #111213;
-    color: #f5f5f5e5;
-}
-
-button:hover {
-    background-color: #f5f5f5e5;
-    color: #111213;
-}
-
-#greeting {
-    font-size: 32px;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(1);
-    }
-}
-
-.greeting-show {
-    animation: fadeIn 4s ease;
-}
+/* Home Section */
 
 #home {
-    margin: 50px;
+    margin: 4rem;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    height: 100vh;
+    gap: 8rem;
+    height: 100dvh;
+
+
 }
 
 .home__text {
     flex: 1;
     text-align: left;
-    line-height: 45px;
-    padding-left: 300px;
+    line-height: 3rem;
+    padding-left: 15rem;
 }
 
 .intro__tagline {
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 
 .intro__tagline span {
@@ -193,38 +172,81 @@ button:hover {
 }
 
 .intro__hello {
-    font-size: 40px
+    font-size: 3rem;
 }
+
+button {
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: solid 0.2rem #f5f5f5e5;
+    background-color: #111213;
+    color: #f5f5f5e5;
+}
+
+button:hover {
+    background-color: #f5f5f5e5;
+    color: #111213;
+}
+
+#greeting {
+    font-size: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+.greeting-show {
+    animation: fadeIn 4s ease;
+}
+
+/* Sub-section Styling */
 
 .section__title {
     color: #00CE44;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: top;
-    height: 500px;
+    height: 50dvh;
+    align-content: center;
 }
 
 .section__content {
-    max-width: 900px;
-    min-height: 500px;
+    width: 50dvw;
+    height: 50dvh;
     text-align: left;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
+/* About Section */
+
 #about {
-    height: 100vh;
-    width: 100%;
+    height: 100dvh;
+    width: 100dvw;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
+/* Resume Download */
+
 .download {
-    width: 35px;
+    width: 15rem;
     color: inherit;
 }
 
@@ -240,49 +262,54 @@ button:hover {
     color: #00CE44;
 }
 
+/* Skills Section */
+
 #skills {
-    height: 100vh;
+    height: 100dvh;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 4rem;
 }
 
 .skills__container {
     display: flex;
     text-align: justify;
-    height: 570px;
+    height: 57dvh;
+    width: 50dvw;
 }
 
 .skill__label {
     font-weight: bold;
-    padding-bottom: 40px;
-    font-size: 20px;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .skill__category {
-    padding: 40px;
-    font-size: 20px;
+    padding: 3rem;
+    font-size: 1.3rem;
 }
 
 .skill__item {
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
+/* Project Section */
+
 #projects {
-    height: 100vh;
+    height: 100dvh;
     scroll-snap-align: end;
     scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 5rem;
 }
 
 #projects .section__content {
-    height: 700px;
+    height: 70dvh;
 }
 
 .project__item {
@@ -290,31 +317,31 @@ button:hover {
 }
 
 #projects .project__picture img {
-    width: 70%;
-    max-width: 100%;
-    margin-right: 40px;
+    width: 50%;
+    padding-bottom: 1.5rem;
 }
 
 .project__name a {
-    font-size: 25px;
+    font-size: 1.5rem;
     text-decoration: none;
     color: inherit;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 1.5rem;
     font-style: oblique;
 }
 
 figcaption {
     text-align: start;
-    padding: 20px;
-    max-width: 500px;
-    font-size: 20px;
+    width: 50dvh;
+    font-size: 1.5rem;
 }
+
+/* Footer */
 
 .footer {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    margin: 40px;
+    margin: 3rem;
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -326,11 +353,12 @@ figcaption {
 }
 
 .footer__links a {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: inherit;
     position: relative;
 }
+
 
 .footer__links a:hover {
     color: #00CE44;
@@ -339,33 +367,31 @@ figcaption {
 /* Media Query */
 
 @media screen and (max-width: 960px) {
-    .navbar__container>fieldset {
-        position: static;
-        display: flex;
-        height: 80px;
-        padding: 5rem;
-        font-size: 1rem;
+
+    #site {
+        width: 100rem;
+        height: 100dvh;
+    }
+
+    #navbar {
+        margin-bottom: 50rem;
     }
 
     #home {
+        width: 70rem;
         margin: 0;
         padding: 0;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        min-width: 855px;
-        margin-top: 150px;
-        min-height: 750px;
+        margin: 15rem;
         scroll-snap-align: none;
-
     }
 
     .home__text {
-        padding: 60px;
+        padding: 6rem;
     }
 
     .home__greeting {
-        max-height: 50px;
+        height: 5rem;
     }
 
     .theme-picker>fieldset {
@@ -377,83 +403,96 @@ figcaption {
 
     .section__title {
         color: #00CE44;
-        font-size: 30px;
-        text-align: center;
-        height: 50px;
+        font-size: 1.8rem;
     }
 
     .section__content {
-        max-width: 700px;
-        min-height: 500px;
-        text-align: left;
-        font-size: 25px;
-        line-height: 35px;
+        width: 60rem;
     }
 
     #about {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        justify-content: center;
-        min-width: 855px;
-        min-height: 750px;
+        width: 100rem;
         scroll-snap-align: none;
-        padding: 0px;
-        margin: 0px;
     }
 
     .resume {
-        min-width: 750px;
-        min-height: 200px;
+        width: 100rem;
         color: inherit;
         justify-content: center;
         text-align: center;
     }
 
     #skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        justify-content: center;
-        min-width: 855px;
-        min-height: 750px;
+        width: 70rem;
         scroll-snap-align: none;
-        padding: 0px;
-        margin: 0px; 
-        scroll-snap-align: none;
-        padding: 0px;
-        margin: 0px;
+        margin: 15rem;
+    }
+
+    .skills__container {
+        width: 60rem;
+    }
+
+    .skill__label {
+        font-weight: bold;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .skill__category {
+        padding: 3rem;
+        font-size: 1.3rem;
+    }
+
+    .skill__item {
+        line-height: 2.5rem;
     }
 
     #projects {
-    
+        width: 100rem;
+        scroll-snap-align: none;
+        height: max-content;
+    }
+
+    #projects .section__content {
+        height: 50rem;
+    }
+
+    .project__item {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        justify-content: center;
-        min-width: 855px;
-        scroll-snap-align: none;
-        padding: 0px;
-        margin: 0px;
-        min-height: 1000px;
-        scroll-snap-align: none;
+        padding: 1rem;
+    }
+
+    #projects .project__picture img {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .project__name a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        padding-bottom: 1.5rem;
+        font-style: oblique;
+    }
+
+    figcaption {
+        text-align: start;
+        width: 70rem;
+        font-size: 1.5rem;
     }
 
     .footer {
-        position: static;
-        display: flex;
-        height: 80px;
-        width: 800px;
-        padding: 40px;
-        margin: 0px;
-        font-size: 1rem;
-
+        height: 100rem;
     }
 
     .footer__links {
         display: flex;
-        gap: 5px;
+        gap: 4rem;
+    }
+
+    .footer__copyright {
+        text-align: start;
+        height: 5rem;
     }
 }
