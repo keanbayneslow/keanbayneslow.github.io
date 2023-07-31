@@ -1,7 +1,7 @@
 const colorThemes = document.querySelectorAll('[name="theme"]');
 const rootElement = document.documentElement;
 
-//store theme
+/*store theme
 const storeTheme = function (theme) {
     localStorage.setItem("theme", theme)
 }
@@ -24,9 +24,9 @@ colorThemes.forEach((themeOption) => {
 //apply theme
 const setTheme = function (theme) {
     document.documentElement.className = theme;
-};
+};//
 
-applyStoredTheme();
+applyStoredTheme(); */
 
 //user greeting
 const greetings = [

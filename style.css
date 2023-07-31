@@ -209,7 +209,6 @@ button:hover {
     min-height: 500px;
     text-align: left;
     font-size: 25px;
-
     line-height: 35px;
 }
 
@@ -223,6 +222,11 @@ button:hover {
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+}
+
+.download {
+    width: 35px;
+    color: inherit;
 }
 
 .resume a {
@@ -305,7 +309,7 @@ figcaption {
     text-align: start;
     padding: 20px;
     max-width: 500px;
-    font-size: 20px ;
+    font-size: 20px;
 }
 
 .footer {
@@ -350,9 +354,9 @@ figcaption {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        min-width: 750px;
+        min-width: 855px;
         margin-top: 150px;
-        height: 750px;
+        min-height: 750px;
         scroll-snap-align: none;
 
     }
@@ -372,39 +376,85 @@ figcaption {
         padding: 0 1rem;
     }
 
+    .section__title {
+        color: #00CE44;
+        font-size: 30px;
+        text-align: center;
+        height: 50px;
+    }
+
+    .section__content {
+        max-width: 700px;
+        min-height: 500px;
+        text-align: left;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
     #about {
-        height: 100dvh;
         display: flex;
-        align-items: center;
         justify-content: center;
-        gap: 40px;
-        margin: 0px;
-        min-width: 750px;
-        height: 450px;
+        text-align: center;
+        justify-content: center;
+        min-width: 855px;
+        min-height: 750px;
         scroll-snap-align: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .resume {
+        min-width: 750px;
+        min-height: 200px;
+        color: inherit;
+        justify-content: center;
+        text-align: center;
     }
 
     #skills {
-        height: 100dvh;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 40px;
-        margin: 0px;
-        min-width: 750px;
-        height: 750px;
+        text-align: center;
+        justify-content: center;
+        min-width: 855px;
+        min-height: 750px;
         scroll-snap-align: none;
+        padding: 0px;
+        margin: 0px; 
+        scroll-snap-align: none;
+        padding: 0px;
+        margin: 0px;
     }
 
     #projects {
-        height: 100dvh;
+    
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 40px;
-        margin: 0px;
-        min-width: 750px;
-        height: 750px;
+        text-align: center;
+        justify-content: center;
+        min-width: 855px;
         scroll-snap-align: none;
+        padding: 0px;
+        margin: 0px;
+        min-height: 1000px;
+        scroll-snap-align: none;
+    }
+
+    .footer {
+        position: static;
+        display: flex;
+        height: 80px;
+        width: 800px;
+        padding: 40px;
+        margin: 0px;
+        font-size: 1rem;
+
+    }
+
+    .footer__links {
+        display: flex;
+        gap: 5px;
     }
 }
