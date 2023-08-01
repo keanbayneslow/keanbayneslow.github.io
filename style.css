@@ -1,8 +1,8 @@
 /* Whole Page Styling */
 
 html {
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    height: 100vh;
 }
 
 * {
@@ -264,18 +264,19 @@ button:hover {
 
 #skills {
     height: 100dvh;
+    width: 100dvw;
     scroll-snap-align: start;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .skills__container {
     display: flex;
     text-align: justify;
-    height: 57dvh;
-    width: 50dvw;
+    height: 60dvh;
 }
 
 .skill__label {
@@ -296,7 +297,7 @@ button:hover {
 /* Project Section */
 
 #projects {
-    height: 100dvh;
+    height: 100rem;
     scroll-snap-align: end;
     display: flex;
     align-items: center;
@@ -305,11 +306,12 @@ button:hover {
 }
 
 #projects .section__content {
-    height: 70dvh;
+    height: 100dvh;
 }
 
 .project__item {
     display: flex;
+    
 }
 
 #projects .project__picture img {
