@@ -16,7 +16,7 @@
     <script src="script.js"></script>
 
     <!-- navbar section -->
-    
+
     <nav id="navbar">
         <div class="navbar__container">
             <ul class="navbar__menu">
@@ -35,7 +35,6 @@
             </ul>
             <form class="theme-picker">
                 <fieldset>
-                    <legend>theme.</legend>
                     <label for="dark">dark.</label>
                     <input type="radio" name="theme" id="dark" checked>
 
@@ -46,27 +45,23 @@
         </div>
     </nav>
 
-    <div id="site">
+    <header id="home">
+        <div class="home__text">
+            <h1 class="intro__hello">Hello!</h1>
+            <br>
+            <h2 class="intro__tagline">I'm <span class="name">Kean Bayneslow</span>, a Front End Developer with a
+                passion for creating clean, engaging user experiences and intuitive digital interfaces.</h2>
+            <br>
+            <h3 class="intro__contact">Get in touch <span><a href="mailto:kean.bayneslow@gmail.com" target="_blank"
+                        class="highlight__link">kean.bayneslow@gmail.com</a> </span> </h3>
+        </div>
+        <div class="home__greeting">
+            <button onclick="greetUser()">greetUser()</button>
+            <div id="greeting"></div>
+        </div>
+    </header>
 
-        <!--home section-->
-
-        <section id="home">
-            <div class="home__text">
-                <h1 class="intro__hello">Hello!</h1>
-                <br>
-                <h2 class="intro__tagline">I'm <span class="name">Kean Bayneslow</span>, a Front End Developer with a
-                    passion for creating clean, engaging user experiences and intuitive digital interfaces.</h2>
-                <br>
-                <h3 class="intro__contact">Get in touch <span><a href="mailto:kean.bayneslow@gmail.com" target="_blank"
-                            class="highlight__link">kean.bayneslow@gmail.com</a> </span> </h3>
-            </div>
-            <div class="home__greeting">
-                <button onclick="greetUser()">greetUser()</button>
-                <div id="greeting"></div>
-            </div>
-        </section>
-
-        <!--about section-->
+    <main id="site">
 
         <section id="about">
             <div class="section__title">about.</div>
@@ -76,61 +71,58 @@
                     knowledge in the field of Front End Development
                     (React/Angular) and UI/UX with AcademyXi in Sydney, Australia. My passion lies in creating engaging
                     user
-                    experiences and minimalist, intuitive digital interfaces.
+                    experiences and minimalist, intuitive digital interfaces.</p>
                 <br>
-                Outside of learning to code I enjoy playing Dungeons & Dragons, rock climbing, writing adventure
+                <p>Outside of learning to code I enjoy playing Dungeons & Dragons, rock climbing, writing adventure
                     campaigns and spending time in
                     nature. </p>
             </div>
         </section>
 
-        <div class="resume">
-            <a href="./src/Resume-Kean-Bayneslow.pdf" title="Resume" download>👉 View Resume</a>
-        </div>
+        <div class="resume"><a href="./src/Resume-Kean-Bayneslow.pdf" title="Resume" download>👉 View Resume</a></div>
 
-        <!--skills section-->
 
         <section id="skills">
             <div class="section__title">skills.</div>
-            <div class="skills__container">
-                <div class="skill__category">
-                    <div class="skill__label">languages.</div>
-                    <ul>
-                        <li class="skill__item">JavaScript (Es6)</li>
-                        <li class="skill__item">HTML</li>
-                        <li class="skill__item">CSS</li>
-                        <li class="skill__item">TypeScript</li>
-                    </ul>
-                </div>
-                <div class="skill__category">
-                    <div class="skill__label">frameworks.</div>
-                    <ul>
-                        <li class="skill__item">React</li>
-                        <li class="skill__item">Node</li>
-                        <li class="skill__item">Angular</li>
-                    </ul>
-                </div>
-                <div class="skill__category">
-                    <div class="skill__label">tools.</div>
-                    <ul>
-                        <li class="skill__item">Git & Github</li>
-                        <li class="skill__item">Unbuntu</li>
-                        <li class="skill__item">Chrome Dev Tools</li>
-                        <li class="skill__item">MongoDB</li>
-                    </ul>
-                </div>
-                <div class="skill__category">
-                    <div class="skill__label">design.</div>
-                    <ul>
-                        <li class="skill__item">Figma</li>
-                        <li class="skill__item">Wireframing</li>
-                        <li class="skill__item">User Testing</li>
-                    </ul>
+            <div class="section__content">
+                <div class="skills__container">
+                    <div class="skill__category">
+                        <div class="skill__label">languages.</div>
+                        <ul>
+                            <li class="skill__item">JavaScript (Es6)</li>
+                            <li class="skill__item">HTML5</li>
+                            <li class="skill__item">CSS3</li>
+                            <li class="skill__item">TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill__category">
+                        <div class="skill__label">frameworks.</div>
+                        <ul>
+                            <li class="skill__item">React</li>
+                            <li class="skill__item">Node</li>
+                            <li class="skill__item">Angular</li>
+                        </ul>
+                    </div>
+                    <div class="skill__category">
+                        <div class="skill__label">tools.</div>
+                        <ul>
+                            <li class="skill__item">Git/Github</li>
+                            <li class="skill__item">Unbuntu</li>
+                            <li class="skill__item">Chrome Dev Tools</li>
+                            <li class="skill__item">MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill__category">
+                        <div class="skill__label">design.</div>
+                        <ul>
+                            <li class="skill__item">Figma</li>
+                            <li class="skill__item">Wireframing</li>
+                            <li class="skill__item">User Testing</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!--project section-->
 
         <section id="projects">
             <div class="section__title">projects.</div>
@@ -182,33 +174,35 @@
                 </div>
             </div>
         </section>
-    
-        <!--footer-->
 
-        <footer class="footer">
-            <div class="footer__copyright">
-                <div class="top">
-                    <span>Designed & developed by</span>
-                </div>
-                <div class="bottom">
-                    <span>Kean Bayneslow</span>
-                    <span> 2023 -
-                        <script>document.write(new Date().getFullYear());</script>
-                    </span>
-                </div>
-            </div>
+    </main>
 
-            <div class="footer__links">
-                <a href="mailto:kean.bayneslow@gmail.com" target="_blank" title="email"><span
-                        class="text">.email</span></a>
-                <a href="https://codepen.io/keanbayneslow" target="_blank" title="codepen"><span
-                        class="text">.codepen</span></a>
-                <a href="https://github.com/keanbayneslow" target="_blank" title="github"><span
-                        class="text">.github</span></a>
-                <a href="https://www.linkedin.com/in/kean-bayneslow/" target="_blank" title="linkedin"><span
-                        class="text">.linkedin</span></a>
+    <footer class="footer">
+        <div class="footer__copyright">
+            <div class="top">
+                <span>Designed & developed by</span>
             </div>
-        </footer>
-    </div>
+            <div class="bottom">
+                <span>Kean Bayneslow</span>
+                <span> 2023 -
+                    <script>document.write(new Date().getFullYear());</script>
+                </span>
+            </div>
+        </div>
+
+        <div class="footer__links">
+            <a href="./src/Resume-Kean-Bayneslow.pdf" title="Resume" download><span class="text">.resume</span></a>
+            <a href="mailto:kean.bayneslow@gmail.com" target="_blank" title="email"><span
+                    class="text">.email</span></a>
+            <a href="https://codepen.io/keanbayneslow" target="_blank" title="codepen"><span
+                    class="text">.codepen</span></a>
+            <a href="https://github.com/keanbayneslow" target="_blank" title="github"><span
+                    class="text">.github</span></a>
+            <a href="https://www.linkedin.com/in/kean-bayneslow/" target="_blank" title="linkedin"><span
+                    class="text">.linkedin</span></a>
+        </div>
+    </footer>
+
 </body>
+
 </html>
