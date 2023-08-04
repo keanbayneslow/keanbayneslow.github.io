@@ -2,33 +2,6 @@ const colorThemes = document.querySelectorAll('[name="theme"]');
 const rootElement = document.documentElement;
 
 
-/*store theme
-const storeTheme = function (theme) {
-    localStorage.setItem("theme", theme)
-}
-
-const applyStoredTheme = function () {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-        setTheme(storedTheme);
-    }
-};
-
-colorThemes.forEach((themeOption) => {
-    themeOption.addEventListener('click', () => {
-        const selectedTheme = themeOption.id;
-        storeTheme(selectedTheme);
-        setTheme(selectedTheme);
-    });
-});
-
-//apply theme
-const setTheme = function (theme) {
-    document.documentElement.className = theme;
-};//
-
-applyStoredTheme(); */
-
 //user greeting
 const greetings = [
     "Hello,",

@@ -51,7 +51,7 @@ li {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 2rem;
+    padding-right: 4rem;
 }
 
 .navbar__menu {
@@ -105,6 +105,7 @@ input {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    scroll-snap-align: start;
 }
 
 .home__text {
@@ -218,6 +219,7 @@ section {
 #about {
     gap: 4rem;
     margin-bottom: 10rem;
+    scroll-snap-align: start;
 }
 
 /* Resume Download */
@@ -244,6 +246,7 @@ section {
 #skills {
     gap: 4rem;
     margin-bottom: 25rem;
+    scroll-snap-align: start;
 }
 
 .skills__container {
@@ -275,6 +278,7 @@ section {
     gap: 4rem;
     margin-bottom: 25rem;
     flex-direction: column;
+    scroll-snap-align: start;
 }
 
 .project__item {
@@ -328,58 +332,11 @@ section {
 
 @media screen and (max-width: 960px) {
 
-    html,
-    body {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    * {
-        font-family: 'IBM Plex Mono', monospace;
-        scroll-snap-type: y proximity;
-        scroll-padding-top: 20rem;
-        scroll-behavior: smooth;
-        margin: 0rem;
-        padding: 0rem;
-    }
-
-    :root {
-        --clr-dark-bg: #111213;
-        --clr-dark-text: #ece9e9;
-        --clr-light-bg: #ece9e9;
-        --clr-light-text: #111213;
-    }
-
-    /* Body */
-
-    #site {
-        width: 100dvw;
-    }
-
-    *::selection {
-        background: #00CE44;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    /* Navbar */
-
-    #navbar {
-        position: fixed;
-        top: 0rem;
-        right: 0rem;
-        width: 100%;
-        background-color: rgb(34, 228, 154, 0.2);
-    }
-
     .navbar__container {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     .navbar__menu {
@@ -390,135 +347,32 @@ section {
     }
 
     .navbar__item {
-        padding-right: 2rem;
-        font-size: 1.2rem;
-    }
-
-    .navbar__links {
-        color: inherit;
-        text-decoration: none;
-        transition: all 0.5s ease;
-    }
-
-    .navbar__links:hover {
-        color: #00CE44;
-    }
-
-    input {
-        accent-color: #00CE44;
+        padding-right: 1rem;
+        font-size: 1rem;
     }
 
     .theme-picker fieldset {
         border: none;
-        font-size: 1.2rem;
-    }
-
-    .light,
-    :root:has(#light:checked) {
-        background-color: var(--clr-light-bg);
-        color: var(--clr-light-text);
-    }
-
-    .dark,
-    :root:has(#dark:checked) {
-        background-color: var(--clr-dark-bg);
-        color: var(--clr-dark-text);
+        font-size: 1rem;
     }
 
     /* Home Section */
 
     #home {
+        flex-direction: column;
+        min-height: 70rem;
+        min-width: 60rem;
+        padding-top: 20rem;
         margin: 4rem;
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
     }
 
     .home__text {
-        flex: 1;
         line-height: 3rem;
-        padding-left: 15rem;
-    }
-
-    .intro__tagline {
-        font-size: 1.9rem;
-    }
-
-    .intro__tagline span {
-        color: #00CE44;
-    }
-
-    .highlight__link {
-        text-decoration: none;
-        color: inherit;
-        position: relative;
-    }
-
-    .highlight__link::after {
-        content: '';
-        height: 2px;
-        background: #00CE44;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        width: 100%;
-        z-index: -2;
-        transition: all 0.3s;
-        transform-origin: 0% 100%;
-    }
-
-    .highlight__link:hover {
-        transition: all 0.5s;
-    }
-
-    .highlight__link:hover::after {
-        transform: scaleY(13);
+        padding-left: 2rem;
     }
 
     .home__greeting {
-        flex: 1;
-        text-align: center;
-    }
-
-    .intro__hello {
-        font-size: 3rem;
-    }
-
-    button {
-        padding: 0.7rem 1rem;
-        border-radius: 1rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        border: solid 0.2rem #ece9e9;
-        background-color: #111213;
-        color: #ece9e9;
-    }
-
-    button:hover {
-        background-color: #ece9e9;
-        color: #111213;
-    }
-
-    #greeting {
-        font-size: 2rem;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-20);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(1);
-        }
-    }
-
-    .greeting-show {
-        animation: fadeIn 4s ease;
+        padding: 0rem;
     }
 
     /* Sub-section Styling */
@@ -527,7 +381,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 50rem;
     }
 
     .section__title {

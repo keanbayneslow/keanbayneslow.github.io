@@ -3,6 +3,7 @@
 This is my very first attempt at making a personal webpage/portfolio using HTML, CSS and JavaScript. Below I have attempted, in-part (removing the tears, and blank stares at the screen), to describe my process, learning and hopefully the future development of this page as my skills and knowledge increase. 
 
 View it here - https://keanbayneslow.github.io/
+
 View my blog about the process here - https://medium.com/@kean.bayneslow/building-a-personal-website-bc368a3ea485
 
 ## Requirements - AcademyXi
