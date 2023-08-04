@@ -15,3 +15,9 @@ The content, styling, and functionality of your site are up to you. Keep in mind
 ## Deployment/Dependencies
 
 No requirements - Completed with HTML, CSS and basic JavaScript only
+
+## Continued Development
+
+- LocalStorage and application of selected light/dark theme
+- JavaScript dynamic rendering for projects
+- Mobile first design revamp

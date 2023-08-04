@@ -25,10 +25,6 @@ body {
 
 /* Body */
 
-#site {
-    width: 100dvw;
-}
-
 *::selection {
     background: #00CE44;
 }
@@ -104,7 +100,6 @@ input {
     display: flex;
     align-items: center;
     height: 100vh;
-    width: 100vw;
     scroll-snap-align: start;
 }
 
@@ -199,8 +194,6 @@ button:hover {
 section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
 }
 
 .section__title {
@@ -279,6 +272,7 @@ section {
     margin-bottom: 25rem;
     flex-direction: column;
     scroll-snap-align: start;
+    align-items: center;
 }
 
 .project__item {
@@ -361,9 +355,9 @@ section {
     #home {
         flex-direction: column;
         min-height: 70rem;
-        min-width: 60rem;
+        min-width: 40rem;
         padding-top: 20rem;
-        margin: 4rem;
+        margin: 1.5rem;
     }
 
     .home__text {
@@ -377,108 +371,75 @@ section {
 
     /* Sub-section Styling */
 
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50rem;
-    }
+#site {
+    margin: 2rem;
+}
 
-    .section__title {
-        color: #00CE44;
-        font-size: 1.8rem;
-    }
+.section__title{
+    text-align: center;
+    margin: 1.5rem;
+}
 
     .section__content {
-        width: 60vw;
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+min-width: 40rem
     }
 
     /* About Section */
 
     #about {
-        gap: 4rem;
-        margin-bottom: 10rem;
-    }
-
-    /* Resume Download */
-
-    .resume {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25rem;
-    }
-
-    .resume a {
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: inherit;
-        transition: all 0.5s ease;
-    }
-
-    .resume a:hover {
-        color: #00CE44;
+        flex-direction: column;
     }
 
     /* Skills Section */
 
     #skills {
-        gap: 4rem;
-        margin-bottom: 25rem;
+        flex-direction: column;
     }
 
     .skills__container {
-        display: flex;
-        width: 100%;
-        text-align: justify;
-        justify-content: center;
+        flex-direction: column;
     }
 
     .skill__label {
-        font-weight: bold;
-        padding-bottom: 1rem;
-        font-size: 1.5rem;
+        text-decoration: underline;
     }
 
     .skill__category {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        font-size: 1.3rem;
-    }
+        padding-bottom: 4rem;
 
-    .skill__item {
-        line-height: 2.5rem;
     }
 
     /* Project Section */
 
-    #projects {
-        gap: 4rem;
-        margin-bottom: 25rem;
-        flex-direction: column;
-    }
+#projects {
+    min-width: 35rem;
+}
 
     .project__item {
-        display: flex;
-        align-items: center;
+    flex-direction: column;
+    }
 
+    .project__picture img{
+        width: 100%;
+        
+    }
+
+    .project__caption {
+        text-align: center;
+        padding-bottom: 2rem;
+        margin-left: 2rem;
     }
 
     /* Footer */
 
     .footer {
-        justify-content: space-between;
-        display: flex;
-        margin: 2rem;
+        width: 40rem;
 
     }
 
     .footer__links a {
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: inherit;
-
+        font-size: 1rem;
+        padding-left: 1rem;
     }
 
 
